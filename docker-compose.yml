@@ -1,0 +1,16 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: object-recognizer
+    volumes:
+      - .:/app
+    networks:
+      - object-recognizer
+    stdin_open: true
+    tty: true
+
+networks:
+  object-recognizer:
+    driver: bridge
