@@ -4,6 +4,8 @@ services:
       context: .
       dockerfile: Dockerfile
     container_name: object-recognizer
+    ports:
+      - "8888:8888"
     volumes:
       - .:/app
     networks:

@@ -36,6 +36,14 @@ docker exec -it object-recognizer bash
 
 ---
 
+### 4. Run the jupyter
+
+```bash
+jupyter notebook --ip=0.0.0.0 --allow-root
+```
+
+---
+
 ## Project Structure
 
 ```
@@ -43,6 +51,7 @@ docker exec -it object-recognizer bash
 ├── Dockerfile
 ├── docker-compose.yml
 ├── main.py
+├── photo-detection.py
 └── README.md
 ```
 
