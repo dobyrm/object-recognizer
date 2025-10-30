@@ -14,3 +14,12 @@
 
 # Runtime data
 *.ipynb
+
+# Model files
+models/*
+!models/*n.pt
+
+# Generated files
+output/*
+storage/*
+!storage/example*
